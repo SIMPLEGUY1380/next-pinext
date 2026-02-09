@@ -24,7 +24,7 @@ function Questions({
   );
 
   return (
-    <div className="h-max flex items-center justify-center relative bg-gradient-to-r from-transparent via-white/5 to-transparent px-1 md:px-8">
+    <div className="h-max flex items-center justify-center relative bg-linear-to-r from-transparent via-white/5 to-transparent px-1 md:px-8">
       <div
         className="flex gap-6 overflow-x-auto p-4 
                 scrollbar-thin 
@@ -34,7 +34,7 @@ function Questions({
                 scrollbar-thumb-rounded-full"
       >
         {questionList.map((q) => (
-          <div key={`first-${q.id}`} className={"flex-shrink-0"}>
+          <div key={`first-${q.id}`} className={"shrink-0"}>
             <Question
               onClick={() => handleQuestionClick(q.id)}
               text={q.text}

@@ -3,13 +3,13 @@ import { X } from "lucide-react";
 function MobileMenu(
         { menuItems, isMenuOpen, closeMenu } 
         : 
-        {menuItems: {label: string, href: `#${string}`}[], isMenuOpen: boolean, closeMenu: ()=> void}
+        {menuItems: {label: string, href: string}[], isMenuOpen: boolean, closeMenu: ()=> void}
     ) {
 
 
 
     return (
-        <div className={`w-full h-[100vh] fixed top-0 z-50 left-0 backdrop-blur-lg flex items-end flex-col gap-6 pt-[140px] px-[19px] ${!isMenuOpen ? 'hidden' : ''}`}>
+        <div className={`w-full h-screen fixed top-0 z-50 left-0 backdrop-blur-lg flex items-end flex-col gap-6 pt-35 px-4.75 ${!isMenuOpen ? 'hidden' : ''}`}>
             <X className="absolute top-10" onClick={closeMenu} />
 
             <div className="h-min">
@@ -22,7 +22,7 @@ function MobileMenu(
                     ))}
                 </ul>
             </div>
-            <div className="bg-accent px-4 py-2 shadow-sm justify-center items-center rounded-[8px]">
+            <div className="bg-accent px-4 py-2 shadow-sm justify-center items-center rounded-lg">
                 <p className="text-[18px] font-bold">تماس بگیرید</p>
             </div>
         </div>

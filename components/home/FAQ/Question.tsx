@@ -19,9 +19,9 @@ function Question({
     disabled={!isActive}
       onClick={handleClick}
       className={clsx(
-        `relative rounded-[12px] px-4 py-2.5 text-right text-white font-medium
+        `relative rounded-xl px-4 py-2.5 text-right text-white font-medium
         transition-all duration-200 transform
-        min-w-[120px] sm:min-w-[140px] max-w-full
+        min-w-30 sm:min-w-35 max-w-full
         whitespace-nowrap overflow-hidden text-ellipsis
         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-400`,
         isActive
@@ -33,7 +33,7 @@ function Question({
     >
       {text}
 
-      <span className="absolute inset-0 rounded-[12px] opacity-0 hover:opacity-20 bg-white transition-opacity pointer-events-none"></span>
+      <span className="absolute inset-0 rounded-xl opacity-0 hover:opacity-20 bg-white transition-opacity pointer-events-none"></span>
     </button>
   );
 }

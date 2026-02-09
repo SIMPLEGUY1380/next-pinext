@@ -39,7 +39,7 @@ function ContactItem({ icon, title, text }: {icon: string, title: string, text: 
         }
     }
     return (
-        <div className="w-[240px] flex relative justify-end items-center px-4 py-2 bg-primary-400 rounded-[8px]">
+        <div className="w-60 flex relative justify-end items-center px-4 py-2 bg-primary-400 rounded-lg">
             {Icon()}
             <div className="flex flex-col items-center">
                 <h5>{title}</h5>

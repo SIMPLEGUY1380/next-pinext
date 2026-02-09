@@ -64,13 +64,13 @@ function Portfolio() {
   return (
     <div className="flex flex-col gap-2 items-center">
       <h1>نمونه کار</h1>
-      <span className="h-[60px] w-full block"></span>
+      <span className="h-15 w-full block"></span>
       <div className="w-[90%] flex gap-4 justify-evenly flex-wrap">
         {projects.slice(0, showNumber).map((p) => (
           <ProjectBox description={p.description} key={p.id} image={p.image} />
         ))}
       </div>
-      <span className="h-[65px] w-full block"></span>
+      <span className="h-16.25 w-full block"></span>
       {showNumber >= projects.length ? (
         <button
           onClick={handleLoadLessClick}

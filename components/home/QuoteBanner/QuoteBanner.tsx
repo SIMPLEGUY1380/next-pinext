@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function QuoteBanner() {
     return (
-        <div className='h-[260px] flex justify-center md:justify-between items-center'>
+        <div className='h-65 flex justify-center md:justify-between items-center'>
             <div className="relative w-[30%] h-[260] hidden md:block">
                 <Image alt='' src='/left.svg' fill className=' hidden md:block' />
             </div>

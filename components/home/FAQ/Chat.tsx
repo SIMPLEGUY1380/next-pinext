@@ -105,7 +105,7 @@ function Chat({
       className="h-full w-full flex flex-col gap-3 p-2 px-4 overflow-auto"
     >
       {messages.length <= 1 && (
-        <div className="flex justify-center my-4">
+        <div className="flex justify-center my-1">
           <div className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm">
             روی یکی از سوالات زیر کلیک کنید
           </div>
@@ -163,7 +163,7 @@ const Message = memo(
         </span>
         <div
           style={{ background: admin ? "#F0ECF4" : "#C3B6D5" }}
-          className="rounded-[4px] px-3 py-2 max-w-[80%] break-words shadow-sm"
+          className="rounded-sm px-3 py-2 max-w-[80%] wrap-break-word shadow-sm"
         >
           {text}
         </div>

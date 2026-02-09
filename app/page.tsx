@@ -11,28 +11,28 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <span className="h-[100px] w-full block"></span>
+      <span className="h-25 w-full block"></span>
       <AudienceSection />
-      <span className="h-[140px] w-full block"></span>
+      <span className="h-35 w-full block"></span>
 
       <button className="gradient-box gap-4">
         <h5 className="text-text">خدمات</h5>
         <span className="block w-3 h-3 bg-primary rounded-full"></span>
       </button>
 
-      <span className="h-[20px] w-full block"></span>
+      <span className="h-5 w-full block"></span>
       <QuoteBanner />
-      <span className="h-[50px] md:h-[130px] w-full block"></span>
+      <span className="h-12.5 md:h-32.5 w-full block"></span>
       <Services />
-      <span className="h-[130px] w-full block"></span>
+      <span className="h-32.5 w-full block"></span>
       <Portfolio />
-      <span className="h-[150px] w-full block"></span>
+      <span className="h-37.5 w-full block"></span>
       <Articles />
-      <span className="h-[185px] w-full block"></span>
+      <span className="h-46.25 w-full block"></span>
       <ContactUs />
-      <span className="h-[185px] w-full block"></span>
+      <span className="h-46.25 w-full block"></span>
       <FAQ />
-      <span className="h-[120px] w-full block"></span>
+      <span className="h-30 w-full block"></span>
     </div>
   );
 }

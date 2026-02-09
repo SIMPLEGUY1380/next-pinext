@@ -33,7 +33,7 @@ function Screen() {
             <div className="w-full flex flex-col justify-between">
                 <Chat question={qNow} questionList={questionList} setWaitingQueue={setWaitingQueue} />
                 <Questions onQuestion={onQuestionFire} questionList={questionList} waitingQueue={waitingQueue} />
-                <Input />
+                {/* <Input /> */}
             </div>
         </div>
     )

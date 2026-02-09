@@ -22,7 +22,7 @@ function AudienceSection() {
     ]
     return (
         <div className="w-full flex justify-center items-center">
-            <div className="flex gap-[30px] px-5 flex-col md:flex-row items-center">
+            <div className="flex gap-7.5 px-5 flex-col md:flex-row items-center">
                 <ContentCard tabs={tabs} selectedTab={selectedTab} />
                 <AudienceTabs tabs={tabs} onClick={onClickHandler} selectedTab={selectedTab} />
             </div>
